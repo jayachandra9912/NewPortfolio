@@ -1,0 +1,117 @@
+multiple objects
+------------------------
+used to share the single module in runtime
+----------------------------------------------------------------------------------------------------------
+access modifier
+-----------------
+--data control and data ristrictions are implemented
+--RBAC-->roll based access control
+--data abstraction
+public 
+private
+protected
+default
+----------------------
+PUBLIC
+------
+-- this is global modifier
+-- any area can access
+-- universal modifier
+
+PRIVATE
+--------
+-- it is restricted to one block(class, function, interface)
+
+PROTECTED
+----------
+-- it is restricted to two code blocks
+
+DEFAULT
+---------
+-- it is invoked implicitly
+
+OVERLOADING
+------------
+-- to reuse the allocated memory
+-- to save the memory
+
+-- constructer overloading
+-- functional overloading
+
+logic --> a class contains more than one functions, all the functions names are samw, but signature of the function is different
+
+inheritance
+-------------
+-- acquiring the properties from one class to another class
+-- to access from class to another class
+-- used to implement code re-usability
+-- used to create relationship between classes
+
+relationship
+-----------
+-- exchanging of properties between classes
+
+- is - a relationship
+- has - a relationship
+
+note: --> "extend" keyword is used to implement relationship.
+
+is - a relationship
+--------------------
+relationship between two classes
+
+has -a arelationship
+---------------------
+-- more than two classes are participated in relationships
+(n- classes)
+
+note : --> for all inhertances last class is called object class
+
+forms of inheritance
+----------------------
+-- single inheritance
+-- multilevel inheritance
+-- multiple inheritance
+-- hierarchial inheritance
+
+single inheritance
+-------------------
+-- two classes are participated in the realationship
+logic --> one super class and one sub class, we can access super class propertiesin sub class is called as object class
+
+actual parameters
+------------------
+-- parameter which are passed from the main method 
+   main method variables are called as actual parameters
+
+unreferenced object
+-----------------------
+not encapculated objects are called as unreferenced objects
+
+packages 
+---------
+package - it contains set of interfaces , classes and methods
+
+there are two types of packages
+-- inbuild packages
+-- user defined packages
+
+inbuild packages ( systen defined, existing)
+-----------------
+
+-------------------------------------------------------------------------------------------------------------
+
+method overiding
+-----------------
+-- super class and subclass contain same methods
+
+----------------------------------------------------------------------------------------------------------------
+static block
+-------------
+it is used to initialize static data memebers
+---------------------------------------------------------------------------------------------------------------------
+interface in java
+-----------------
+
+
+
