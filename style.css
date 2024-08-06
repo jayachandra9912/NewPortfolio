@@ -442,7 +442,7 @@ header {
 .contact-form form {
     display: flex;
     flex-direction: column;
-    width: 650px;
+    width: 100%;
 }
 
 form input,
