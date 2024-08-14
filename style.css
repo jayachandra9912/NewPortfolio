@@ -186,6 +186,7 @@ header {
 
 .home-text h1 {
     font-size: var(--big-font);
+    font-weight: bold;
 }
 
 .home-text h2 {
@@ -225,6 +226,34 @@ header {
 
 .btn :hover {
     background: var(--hover);
+}
+
+/* .moment {
+    display: flex;
+    justify-content: center;
+    color: white;
+} */
+
+.moment::before {
+    content: "Open to work";
+    animation: animate infinite 4s;
+    font-weight: bold;
+
+}
+
+@keyframes animate {
+
+    0% {
+        content: "Fresher";
+    }
+
+    50% {
+        content: "Graduate 2024";
+    }
+
+    75% {
+        content: "CSE";
+    }
 }
 
 
