@@ -24,6 +24,7 @@
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    background-color: cornsilk;
 }
 
 
@@ -171,6 +172,7 @@ header {
 
 .home-img {
     order: 3;
+    padding-top: 35px;
 }
 
 
