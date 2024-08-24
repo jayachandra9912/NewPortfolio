@@ -25,6 +25,9 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     /* background-color: cornsilk; */
+
+
+
 }
 
 
@@ -114,7 +117,7 @@ header {
         text-align: center;
     }
 
-    .home-img img {
+    .slider img {
         width: 70%;
         margin: 0 auto;
     }
@@ -170,13 +173,24 @@ header {
     gap: 1rem;
 }
 
-.home-img {
+.slider {
     order: 3;
     padding-top: 35px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
 }
 
 
-.home-img img {
+.slider img {
     width: 100%;
     border-radius: 0.7rem;
 }
@@ -282,6 +296,7 @@ header {
 
 .about-image img {
     width: 80%;
+    height: 90%;
     border-radius: 0.5rem;
 }
 
@@ -289,7 +304,9 @@ header {
     font-size: var(--p-font);
     font-weight: 400;
     text-align: justify;
+    padding: 10px;
 }
+
 
 .information {
     margin: 1rem 0 1.4rem;
@@ -312,19 +329,26 @@ header {
 
 /*===============skills section===============*/
 
+
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
     margin-top: 4rem;
-
+    padding: 0 2rem;
 }
 
 .skills-image img {
-    width: 60%;
+    width: 100%;
     padding-left: 4rem;
     object-position: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.skills-image img:hover {
+    transform: scale(1.05);
 }
 
 .box-bars {
@@ -333,13 +357,24 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box-bars:hover {
+    transform: translateY(-5px);
 }
 
 .box-bars h3,
 .box-bars span {
     font-size: 1.1rem;
     font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.box-bars h3:hover,
+.box-bars span:hover {
+    color: var(--main-color);
 }
 
 .light-bar {
@@ -348,7 +383,7 @@ header {
     left: 0;
     width: 100%;
     height: 0.5rem;
-    background: hsla(260, 100%, 44%, 0.4);
+    background: hsla(260, 100%, 44%, 0.2);
     border-radius: 0.4rem;
 }
 
@@ -359,31 +394,72 @@ header {
     height: 0.5rem;
     background: var(--main-color);
     border-radius: 0.5rem;
+    width: 0;
+    /* Initially set to 0 to hide */
 }
 
-.html-bar {
-    width: 94%;
+[data-animate="true"].html-bar {
+    animation: loadHtml 1s forwards;
 }
 
-.css-bar {
-    width: 84%;
+[data-animate="true"].css-bar {
+    animation: loadCss 1s forwards;
 }
 
-.js-bar {
-    width: 74%;
+[data-animate="true"].js-bar {
+    animation: loadJs 1s forwards;
 }
 
-.CLanguage-bar {
-    width: 55%;
+[data-animate="true"].CLanguage-bar {
+    animation: loadJava 1s forwards;
 }
 
-.python-bar {
-    width: 70%;
+[data-animate="true"].python-bar {
+    animation: loadPython 1s forwards;
 }
 
-.dart-bar {
-    width: 60%;
+[data-animate="true"].dart-bar {
+    animation: loadDart 1s forwards;
 }
+
+/* Keyframes for animations */
+@keyframes loadHtml {
+    to {
+        width: 94%;
+    }
+}
+
+@keyframes loadCss {
+    to {
+        width: 84%;
+    }
+}
+
+@keyframes loadJs {
+    to {
+        width: 74%;
+    }
+}
+
+@keyframes loadJava {
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes loadPython {
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes loadDart {
+    to {
+        width: 60%;
+    }
+}
+
+
 
 /*====================services section======================*/
 
@@ -467,6 +543,8 @@ header {
     display: grid;
     place-items: center;
     margin-top: 1rem;
+    align-items: center;
+    text-align: center;
 
 }
 
@@ -514,8 +592,8 @@ form textarea {
     display: grid;
     place-items: center;
     padding: 20px;
-    background: #ebebeb;
-    color: #000;
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 .footer h2 {
@@ -530,9 +608,9 @@ form textarea {
     text-align: center;
     line-height: 40px;
     background-color: #fff;
-    border-radius: 50%;
-    width: 40;
-    height: 40;
+    border-radius: 20%;
+    width: 50;
+    height: 50;
 
 }
 
@@ -615,7 +693,7 @@ form textarea {
         grid-template-columns: 0.5fr 3fr;
     }
 
-    .home-img {
+    .slider {
         order: initial;
     }
 
