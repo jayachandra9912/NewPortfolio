@@ -21,7 +21,7 @@ var chandraDb = firebase.database().ref("Chandra");
 document.getElementById("contact-details").addEventListener("submit", jaya);
 
 function jaya(e) {
-    alert("details entered")
+    alert("Sumitted Success")
 
     e.preventDefault();
 

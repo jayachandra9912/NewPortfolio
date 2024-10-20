@@ -34,7 +34,7 @@ body {
 /*============for dark mode==================*/
 body.active {
     --text-color: #fff;
-    --bg-color: #0f0c27;
+    --bg-color: #000000;
 }
 
 section {
@@ -227,6 +227,12 @@ header {
 .social {
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social:hover {
+    transform: scale(1.2);
+    /* Scale icon size by 1.5 times on hover */
 }
 
 .social a {
