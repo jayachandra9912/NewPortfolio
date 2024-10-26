@@ -59,9 +59,6 @@ function jaya(e) {
 }
 
 
-
-
-
 const store = (name, email, message) => {
     var newstore = chandraDb.push();
     newstore.set({
@@ -70,19 +67,6 @@ const store = (name, email, message) => {
         Message: message,
     });
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //=====================portfolio=============================//
