@@ -557,8 +557,8 @@ header {
     display: grid;
     place-items: center;
     margin-top: 1rem;
-    align-items: center;
-    text-align: center;
+    /* align-items: center;
+    text-align: center; */
 
 }
 
@@ -566,6 +566,8 @@ header {
     display: flex;
     flex-direction: column;
     width: 80%;
+    align-items: center;
+    text-align: center;
 }
 
 form input,
@@ -593,7 +595,7 @@ form textarea {
     justify-content: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-left: 35%;
+    /* margin-left: 35%; */
 }
 
 .contact-button:hover {
