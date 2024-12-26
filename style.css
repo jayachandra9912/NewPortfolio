@@ -82,9 +82,9 @@ header {
 
 .navbar a {
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 20px;
     color: var(--text-color);
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .navbar a:hover {
@@ -172,6 +172,9 @@ header {
     position: relative;
     width: 100%;
     min-height: 100vh;
+    /* background-image: url("https://jessicaroots.com/wp-content/uploads/2018/03/portfolio-background-header-53082_1080x675.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     grid-template-columns: 0.2fr 1fr 1fr;
     align-items: center;
