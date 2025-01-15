@@ -646,8 +646,16 @@ form textarea {
 }
 
 .footerimage {
-
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
     text-align: center;
+}
+
+.footerimage img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /*===================make it responsive======================*/
