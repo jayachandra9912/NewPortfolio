@@ -634,7 +634,7 @@ form textarea {
 }
 
 .copyright {
-    padding: 20;
+    margin-top: 5px;
     background: var(--main-color);
     text-align: center;
     color: #fff;
@@ -643,6 +643,11 @@ form textarea {
 
 .copyright a {
     color: #22cf91;
+}
+
+.footerimage {
+
+    text-align: center;
 }
 
 /*===================make it responsive======================*/
