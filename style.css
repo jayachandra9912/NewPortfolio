@@ -14,7 +14,7 @@
     --bg-color: #fff;
     --text-color: #0f0c27;
     --hover: hsl(260, 100%, 51%);
-
+    --bg-home-color: #e2d8d8;
     --big-font: 3.2rem;
     --medium-font: 1.8rem;
     --p-font: 0.941rem;
@@ -167,6 +167,15 @@ header {
 
 
 /*=====================home section============================*/
+
+.home-bg {
+    background-color: #FFE5CF;
+    margin-left: 4%;
+    margin-right: 4%;
+
+    border-radius: 20px;
+    /* margin-top: 40px; */
+}
 
 .home {
     position: relative;

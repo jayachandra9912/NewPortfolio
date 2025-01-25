@@ -79,10 +79,26 @@ menu.onclick = () => {
     navbar.classList.toggle('active');
 }
 
+// body background color
+
+// const colorBox = document.getElementById("home-bg");
+// const button = document.getElementById("darkmode");
+// let isDefaultColor = true;
+
+// button.addEventListener("click", () => {
+//     colorBox.style.backgroundColor = isDefaultColor ? "#818C78" : "#FFE893";
+//     isDefaultColor = !isDefaultColor
+// })
+
+
 //for dark mode
 
 let darkmode = document.querySelector('#darkmode');
+const colorBox = document.getElementById("home-bg");
+let isDefaultColor = true;
 darkmode.onclick = () => {
+    colorBox.style.backgroundColor = isDefaultColor ? "#818C78" : "#FFE5CF";
+    isDefaultColor = !isDefaultColor
     if (darkmode.classList.contains('bx-moon')) {
         darkmode.classList.replace('bx-moon', 'bx-sun');
         document.body.classList.add('active');
