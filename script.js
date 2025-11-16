@@ -97,7 +97,7 @@ let darkmode = document.querySelector('#darkmode');
 const colorBox = document.getElementById("home-bg");
 let isDefaultColor = true;
 darkmode.onclick = () => {
-    colorBox.style.backgroundColor = isDefaultColor ? "#818C78" : "#FFE5CF";
+    colorBox.style.backgroundColor = isDefaultColor ? "#818C78" : "#F9F8F6";
     isDefaultColor = !isDefaultColor
     if (darkmode.classList.contains('bx-moon')) {
         darkmode.classList.replace('bx-moon', 'bx-sun');
